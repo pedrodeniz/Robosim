@@ -23,6 +23,6 @@ roslaunch exporter gazebo.launch
 ```
 
 
-<p align="center"> Current work </p>
+**Current progress**
 
-<img src="https://github.com/robotecc/Robosim/blob/master/images/model.png" width="400" height="163" align="center"/>
+<img src="https://github.com/robotecc/Robosim/blob/master/images/model.png" width="800" height="600" align="center"/>
