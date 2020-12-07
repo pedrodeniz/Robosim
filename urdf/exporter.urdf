@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="exporter">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0183308231346785 -0.017077163575613 -0.276264487194015"
+        rpy="0 0 0" />
+      <mass
+        value="72.4659208315973" />
+      <inertia
+        ixx="1.06454158849362"
+        ixy="1.08506527863837E-06"
+        ixz="6.27206520164231E-05"
+        iyy="2.76304266663007"
+        iyz="0.000828541520882374"
+        izz="1.72405725288073" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="0.05265036863964 -3.44482810332725E-11 -4.6849857760628E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.629986456774002" />
+      <inertia
+        ixx="0.00199867574004629"
+        ixy="-7.93751342080599E-14"
+        ixz="-1.00265685158614E-12"
+        iyy="0.0010664866300675"
+        iyz="1.5096348853611E-12"
+        izz="0.00106649815262516" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel"
+    type="revolute">
+    <origin
+      xyz="-0.30035 -0.0069235 -0.02554"
+      rpy="1.5834 0 -3.1412" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="0.052716744272187 -3.45974186799491E-11 -4.68491362023982E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.629986456768948" />
+      <inertia
+        ixx="0.00199867574004617"
+        ixy="-7.98180095041565E-14"
+        ixz="-1.00282061320392E-12"
+        iyy="0.00106648663006701"
+        iyz="1.50972578227153E-12"
+        izz="0.00106649815262514" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exporter/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel"
+    type="revolute">
+    <origin
+      xyz="0.28138 0.0038748 -0.02554"
+      rpy="1.5708 0 -0.00041737" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
