@@ -1,0 +1,12 @@
+cd ~/catkin_ws/src
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+cd ~/catkin_ws
+catkin_make
+
+gedit ~/.bashrc
+source ~/.bashrc
+cd ~
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
